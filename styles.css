@@ -1,0 +1,168 @@
+* {
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+}
+
+
+body{
+    background-image: url(images/fundoescada.jpg);
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+.flex {
+    display: flex;
+}
+
+/*Estilo do cabeçalho*/
+
+header{
+    padding: 40px 4%;
+}
+
+header > .interface {
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    
+}
+header a{
+    color: rgb(192, 190, 190);
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+header a:hover{
+    color: #fff;
+    transform: scale(1.1);
+}
+header nav ul{
+    list-style-type: none;
+}
+header nav ul li{
+    display:inline-block;
+    padding: 0 80px;
+}
+li a .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li.dropdown {
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #928a8a;
+    min-width: 160px;
+    box-shadow: 0px 8px 10px rgba(0,0,0,0.2);
+    z-index: 1;
+    opacity: 0.7;
+}
+.dropdown-content a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.dropdown-content a:hover {
+    background-color: #757070;
+    
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  
+}
+
+img{
+    border-radius: 50%;
+    width: 100px;
+}
+
+/*Estilo do topo do site*/
+
+section.topo-do-site{
+    padding: 100px 4%;
+  
+
+}
+section.topo-do-site .flex {
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+.topo-do-site .txt-topo-site h1{
+    color: white;
+    font-size: 38px;
+    line-height: 40px;
+    
+}
+.topo-do-site .txt-topo-site h1 span{
+    color: #007bff;
+}
+.topo-do-site .txt-topo-site p{
+    color: white;
+    margin: 40px 0;
+}
+
+.img-topo-site img{
+    width: 250px;
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+   
+}
+.btn-meu-curriculo button {
+    background-color: #a1a1a1;
+    padding: 10px 40px;
+    font-size:18px;
+    font-weight: 600;
+    border: none;
+    border-radius: 50%;
+    cursor:pointer;
+    display: inline-block;
+    text-align: center;
+    transition: all 0.5s;
+    
+}
+.btn-meu-curriculo button span{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+.btn-meu-curriculo button span:after{
+    content:'\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+.btn-meu-curriculo button:hover span {
+    padding-right: 25px;
+}
+.btn-meu-curriculo button:hover span:after{
+    opacity: 1;
+    right: 0;    
+}
+ 
+@keyframes flutuar {
+    0% {
+        top: 0;
+    }
+    100%{
+        top: 70px;
+    }
+}
