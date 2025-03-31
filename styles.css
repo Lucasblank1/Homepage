@@ -214,9 +214,46 @@ section.sobre .flex{
     margin: 0 5px;
     transition: .2s;
 }
+.btn-social h3{
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 25px;
+}
 .sobre .img-sobre img{
    width: 250px;
+   animation: flutuar 2s ease-in-out infinite alternate;
+   position: relative;
 }
+
+.resumo-linguagens {
+    margin-top: 20px;
+    text-align: justify;
+}
+
+.resumo-linguagens p {
+    font-size: 18px;
+    color: white;
+    max-width: 600px;
+    margin: 0 auto 20px;
+    line-height: 1.5;
+}
+
+.icones-linguagens {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    padding-bottom: 50px;
+}
+
+.icones-linguagens img {
+    width: 50px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.icones-linguagens img:hover {
+    transform: scale(1.2);
+}
+
 
 /*ESTILO DO FORMULÁRIO DE CONTATO */
 
