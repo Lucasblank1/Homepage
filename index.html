@@ -56,13 +56,13 @@
                 </div>
             </div>
         </section>
-        <section id="sobre" class="sobre">
+        <section class="sobre">
             <div class="interface">
                <div class="flex">
                  <div class="img-sobre">
                     <img src="perfil.jpg" alt="foto">
                  </div>
-                 <div class="txt-sobre">
+                 <div  id="sobre" class="txt-sobre">
                     <h2>Muito prazer, <span>Sou Lucas Blank.</span></h2>
                     <p>Tenho 27 anos e sou natural de Pelotas-RS, atualmente resido em Palhoça-SC. Estou cursando a 2ª fase de Análise e Desenvolvimento de Sistemas.</p>
                     <p>Ao longo da minha carreira profissional trabalhei em três áreas diferentes e estou em busca da migração para a quarta área, onde pretendo me estabilizar e focar todos os meus esforços. Além das habilidades específicas necessárias para cada área, desenvolvi algumas habilidades gerais que são de grande valia em todas as áreas.</p>
@@ -119,5 +119,23 @@
             </div>
         </div>
     </footer>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            document.querySelector('a[href="#sobre"]').addEventListener("click", function(event) {
+                event.preventDefault(); 
+                let target = document.querySelector("#sobre");
+                let headerOffset = -50; // Ajuste para garantir que toda a seção fique visível
+                let elementPosition = target.getBoundingClientRect().top + window.scrollY;
+                let offsetPosition = elementPosition + headerOffset;
+        
+                window.scrollTo({
+                    top: offsetPosition,
+                    behavior: "smooth"
+                });
+            });
+        });
+        </script>
+        
+    
 </body>
 </html>

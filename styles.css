@@ -28,6 +28,10 @@ button:hover{
 }
 /*Estilo do cabeçalho*/
 
+html {
+    scroll-behavior: smooth;
+}
+
 header{
     padding: 40px 4%;
 }
